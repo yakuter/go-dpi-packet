@@ -27,7 +27,7 @@ func main() {
 	defer handle.Close()
 
 	// Set filter
-	var filter string = "tcp and port 443"
+	var filter string = "tcp and port 80"
 	err = handle.SetBPFFilter(filter)
 	if err != nil {
 		log.Fatal(err)
